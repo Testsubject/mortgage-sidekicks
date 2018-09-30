@@ -1,0 +1,93 @@
+/* Start of Navigation Bar */
+navigation-bar {
+    position: relative;
+    width: 100%;
+    line-height: 60px;
+}
+
+navigation-bar ul {
+    line-height: 30px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: .3s;
+}
+
+navigation-bar.black ul {
+    background: rgba(0,0,0,0.8);
+}
+
+navigation-bar ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+navigation-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+navigation-bar.black ul li a {
+    color: #fff;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1e272e;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+navigation-bar.black .link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+navigation-bar.black .link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* End of Navigation Bar */
+
+#home-banner {
+    background-image: url("./images/banner-home-2side.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#main-nav {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    display: inline-block;
+}
