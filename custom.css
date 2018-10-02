@@ -1,59 +1,37 @@
+html, body {
+    font-family: Quicksand;
+}
+
 /* Start of Navigation Bar */
-navigation-bar {
-    position: relative;
+.navigation-bar {
+    position: fixed;
     width: 100%;
-    line-height: 60px;
+    text-align: center;
+    z-index: 500;
+    transition: background-color 0.3s ease-in-out;
 }
-
-navigation-bar ul {
-    line-height: 30px;
+.navigation-bar ul {
     list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
-navigation-bar.black ul {
-    background: rgba(0,0,0,0.8);
-}
-
-navigation-bar ul li {
+.navigation-bar ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 16px 50px;
 }
 
-navigation-bar ul li a {
+.navigation-bar ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
     font-weight: bold;
-    letter-spacing: 1px;
-    transition: .3s;
+    letter-spacing: 1.5px;
 }
 
-navigation-bar.black ul li a {
-    color: #fff;
+.navigation-bar.black {
+    background-color: rgba(0,0,0,0.8);
 }
 
 .link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #1e272e;
-    transition: width .3s;
-}
-
-.link:hover::after {
-    width: 100%;
-    transition: width .3s;
-}
-
-navigation-bar.black .link::after {
     content: '';
     display: block;
     width: 0;
@@ -62,10 +40,11 @@ navigation-bar.black .link::after {
     transition: width .3s;
 }
 
-navigation-bar.black .link:hover::after {
+.link:hover::after {
     width: 100%;
     transition: width .3s;
 }
+
 /* End of Navigation Bar */
 
 #home-banner {
@@ -90,4 +69,13 @@ navigation-bar.black .link:hover::after {
     margin-right: 0;
     margin-left: 0;
     display: inline-block;
+}
+
+#bg-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
 }
