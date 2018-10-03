@@ -163,7 +163,7 @@
                     </p>
 
 
-                    <form id="mortgage-contact-form" class="form-group bg-info mt-5" name="contactform" method="post"
+                    <form class="form-group bg-info mt-5" id="mortgage-contact-form" name="contactform" method="post"
                         action="send_form_email.php">
                         <!-- <table width="450px"> -->
                         <div class="form-row">
@@ -171,28 +171,28 @@
                                 <label for="first_name" name="first_name">
                                     <h5>First Name *</h5>
                                 </label>
-                                <input type="text" class="form-control bg-light" name="first_name">
+                                <input class="form-control bg-light" type="text" name="first_name">
                             </div>
                             <div class="form-group col-md-6 text-white">
                                 <label for="last_name" name="last_name">
                                     <h5>Last Name *</h5>
                                 </label>
-                                <input type="text" class="form-control bg-light" name="last_name">
+                                <input class="form-control bg-light" type="text" name="last_name">
                             </div>
                             <div class="form-group  col-md-6 text-white">
                                 <label for="email_address">
                                     <h5>Email Address *</h5>
                                 </label>
-                                <input type="email" class="form-control bg-light" name="email_address" placeholder="address@email.com">
+                                <input class="form-control bg-light" type="email" name="email_address" placeholder="address@email.com">
                             </div>
                             <div class="form-group  col-md-6 text-white">
                                 <label for="email_address">
                                     <h5>Phone Number </h5>
                                 </label>
-                                <input type="text" class="form-control bg-light" name="telephone" placeholder="123-456-7890">
+                                <input class="form-control bg-light" type="text" name="telephone" placeholder="123-456-7890">
                             </div>
                         </div>
-                        <div id="message" class="form-group col-sm-12">
+                        <div class="form-group col-sm-12" id="message">
                             <div class="form-row text-white">
                                 <label for="comments">
                                     <h5>Message</h5>
@@ -200,7 +200,7 @@
                                 <textarea class="form-control bg-light" name="comments" rows="8"></textarea>
                             </div>
                         </div>
-                        <button type="submit" value="Submit" class="btn btn-lg btn-warning">
+                        <button class="btn btn-lg btn-warning" type="submit" value="Submit">
                             Submit
                         </button>
                     </form>
