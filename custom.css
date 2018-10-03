@@ -82,6 +82,12 @@ body {
   width: 100%;
 }
 
+#logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+}
 /* End Homepage */
 /* Start Prequalification */
 
